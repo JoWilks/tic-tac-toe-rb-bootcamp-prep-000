@@ -124,7 +124,7 @@ end
 
 
 def play(board)
-  while !over?(board)
+  while !over?(board) #error about not checking won? every turn was because over? was never calling won? function
   turn(board)
   end
     if won?(board)
