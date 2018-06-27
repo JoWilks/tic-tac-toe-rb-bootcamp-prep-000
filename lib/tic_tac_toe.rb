@@ -135,7 +135,7 @@ def play(board)
 while !over?(board)
 turn(board)
 end
-  if won?(board)
+  if won?(board).kind_of?(Array) == false
   puts "Congratulations #{winner(board)}!"
 elsif draw?(board)
   puts "Cat's Game!"
