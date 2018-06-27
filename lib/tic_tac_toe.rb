@@ -107,13 +107,7 @@ end
 
 
 def over?(board)
-  if draw?(board) == true
-    return true
-  elsif won?(board).kind_of?(Array) == true
-  return true
-  elsif full?(board) == false 
-    return false
-end
+  won?(board) || draw?(board)
 end
 
 
