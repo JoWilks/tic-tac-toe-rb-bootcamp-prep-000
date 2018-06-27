@@ -51,7 +51,6 @@ def turn_count(board)
     move_count += 1
     end
   end
-  puts move_count
   return move_count
 end
 
