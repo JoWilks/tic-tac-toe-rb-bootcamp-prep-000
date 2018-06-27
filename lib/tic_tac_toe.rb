@@ -89,11 +89,7 @@ end
 
 
 def full?(board)
-    if board.any? { |markers| markers == " "}
-      return false
-    else 
-      return true
-  end
+  board.all?{|token| token == "X" || token == "O"}
 end
 
 
